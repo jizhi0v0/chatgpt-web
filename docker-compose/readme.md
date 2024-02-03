@@ -1,25 +1,14 @@
-### docker-compose 部署教程
-- 将打包好的前端文件放到 `nginx/html` 目录下
+### docker-compose Deployment Tutorial
+-Put the packaged front-end files in the `nginx/html` directory
 - ```shell
-  # 启动
+  # start up
   docker-compose up -d
   ```
 - ```shell
-  # 查看运行状态
+  # Check the running status
   docker ps
   ```
 - ```shell
-  # 结束运行
+  # end run
   docker-compose down
   ```
-
-- ```shell
-  # build images
-   docker build --platform linux/amd64 -t jizhiovo/chatgpt-web .
-  ```
-
-- ```shell
-  # push images
-   docker push jizhiovo/chatgpt-web
-  ```
-
